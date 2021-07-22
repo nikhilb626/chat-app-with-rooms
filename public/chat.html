@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat page</title>
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+<div class="status-bar">
+    <div class="room-container">
+
+        <i class="fa fa-comments"></i>
+        <h2 id="room-name">Room</h2>
+    </div>
+
+    <div class="user-container">
+     <ul><li><i class="fa fa-users"></i><ul id="users">
+   
+
+     </ul></li></ul>
+
+    </div>
+
+<div class="leave-container">
+    <a id="leave-btn" class="btn"><i class="fa fa-home"></i></a>
+</div>
+
+</div>
+
+
+<div class="chat-messages">
+    
+    <!-- cuttttttttt -->
+    <!-- <div class="message left">
+        <p class="meta">brad<span>9:20pm</span></p>
+        <p class="text">this is message</p>
+    </div>
+
+
+    <div class="message right">
+        <p class="meta">brad<span>9:20pm</span></p>
+        <p class="text">this is messageand we are here to celebrate our independ</p>
+    </div>
+
+
+    <div class="message-middle">
+        <p class="text">this is message</p>
+      
+    </div> -->
+  
+
+   <!-- cutttttt -->
+</div>
+<div class="status-type">
+    <p><i>Status:Null</i></p>
+</div>
+    
+
+<div class="chat-form-container">
+    <form id="chat-form">
+      <input
+        id="msg"
+        type="text"
+        placeholder="Type a Message"
+        required
+        autocomplete="off"
+      />
+      <button class="btn"><i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+
+  
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

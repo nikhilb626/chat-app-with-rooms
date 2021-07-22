@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #1c0da3;
+    background: linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background: -webkit-linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background: -moz-linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow:hidden;
+}
+
+h1{
+    width: fit-content;
+    margin: 1px auto;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+    margin-top: 100px;
+
+}
+
+
+
+
+.form-container{
+    width: 80%;
+    height: 50%;
+    margin: 1px auto;
+    margin-top: 120px;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input,button{
+    margin: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in;
+
+}
+
+form input:hover{
+    border-left:8px solid #06c05d;
+    border-right:8px solid #06c05d;
+
+    box-shadow: 0 0 100px rgba(11, 175, 88, 01);
+}
+
+form button{
+    margin-top: 15px;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background: rgb(37, 37, 37);
+    color: white;
+}
+
+form button:active{
+        background: grey;
+}
+
+
+form input::placeholder{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    color: rgb(172, 172, 172);
+    letter-spacing: 1px;
+}
+
+marquee{
+    font-size: 18px;
+    font-family: 'Otomanopee One', sans-serif;
+
+
+}
+
+form input[type="text"]{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+
+}
+
+/* h2{
+    font-family: 'Otomanopee One', sans-serif;
+   border-bottom: 1px solid white; 
+   width: fit-content;
+   margin: 1px auto;
+}
+ */
+

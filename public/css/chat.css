@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1c0da3;
+    background: linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background: -webkit-linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background: -moz-linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow:hidden;
+}
+
+
+
+.status-bar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    justify-content: space-between;
+    box-shadow: 1px 13px 13px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 13px 13px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 13px 13px 2px rgba(0,0,0,0.75);
+   
+}
+
+
+
+.room-container{
+    display: flex;
+    padding: 15px;
+
+}
+
+.room-container i{
+    font-size: 1.8rem;
+}
+.room-container h2{
+    padding-left:6px;
+    padding-top:6px;
+
+    font-size: 1.3rem;
+    line-height: 20px;
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 2px;
+
+
+}
+
+
+.user-container{
+    line-height: 20px;
+    display: block;
+    padding: 10px;
+    width: 90px;
+
+}
+
+.user-container ul li{
+    list-style: none;
+}
+
+
+.user-container ul li i{
+    font-size:35px;
+
+}
+
+#users{
+    position: relative;
+    top: 15px;
+    left:-200px;
+    width: 430px;
+    display:none;
+    transition: 5s ease-in-out;
+    background: #1c0da3;
+    background: linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background: -webkit-linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background: -moz-linear-gradient(156deg,#1c0da3 0%, #71c1e8 80%);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index:20;
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 3px;
+
+
+   
+}
+
+#users li{
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+
+
+.user-container ul li:hover #users{
+    display:block; 
+}
+
+
+.leave-container{
+    line-height: 20px;
+    display: block;
+    padding: 10px;
+    width: 90px;
+
+
+}
+
+.leave-container a i{
+    font-size:35px;
+}
+
+.chat-messages {
+	padding: 30px;
+    position: fixed;
+	overflow-y: scroll;
+    left:0;
+    right: 0;
+    top:20%;
+    height: 60vh;
+
+}
+
+.status-type{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 14%;
+    height: 30px;
+    padding: 5px;
+    color: rgb(234, 238, 234);
+    z-index:-2;
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+
+  }
+
+
+.status-type p{
+    line-height:20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 3px;
+    
+
+}
+
+
+.chat-form-container{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0%;
+    padding: 20px;
+    z-index:20;
+
+}
+
+
+.chat-form-container form{
+    display: flex;
+    width: 100%;
+    margin: 2px auto;
+    align-items: center;;
+    justify-content: center;
+
+}
+
+.chat-form-container form input{
+padding: 8px;
+width: 80%;
+border-radius: 20px;
+
+
+border: none;
+outline:none;
+background: rgb(27, 26, 26);
+color: white;
+transition: 0.5s ease-in;
+
+
+
+}
+
+.chat-form-container form input:hover{
+    border-left:8px solid #06c05d;
+    border-right:8px solid #06c05d;
+
+    box-shadow: 0 0 100px rgba(11, 175, 88, 0.8);
+
+}
+
+
+.chat-form-container form button{
+    padding: 8px;
+    width: fit-content;
+    border: none;
+    outline:none;
+    
+    color: rgb(15, 172, 15);
+    background:transparent;
+    transition: .5s all;
+
+}
+
+.chat-form-container form button:hover{
+    transform:scale(1.3);
+}
+
+.chat-form-container form button:active{
+    color: rgb(106, 226, 106);
+    transform: scale(0.8);
+
+}
+
+
+.chat-form-container form input::placeholder{
+    font-family: 'Otomanopee One', sans-serif;
+
+    font-size: 15px;
+}
+
+
+.chat-form-container form input[type="text"]{
+    font-family: 'Otomanopee One', sans-serif;
+
+    font-size: 15px;
+
+}
+
+
+.chat-form-container form button i{
+    font-size: 30px;
+}
+
+
+.message{
+    
+    width: 80%;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+
+
+}
+
+.left{
+    float:left;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow-wrap: break-word;
+    background: rgb(241, 241, 241);
+    margin-left:-14px;
+}
+
+.right{
+    float:right;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(54, 54, 54);
+    margin-right:-30px;
+    color:white;
+
+}
+
+.chat-messages .meta{
+ padding-left: 10px;
+ padding-top: 3px;
+ text-align: left;
+ border: none;
+ font-size: 17px;
+ letter-spacing: 2px;
+ color: rgb(187, 124, 8);
+ font-family: 'Otomanopee One', sans-serif;
+font-size: 10px;
+}
+
+.chat-messages .meta span{
+    color: rgb(23, 212, 23);
+    float:right;
+    padding-right: 10px;
+ font-family: 'Otomanopee One', sans-serif;
+
+}
+
+.chat-messages .text{
+    border: none;
+    padding-left:20px;
+    font-size: 17px;
+    font-family: 'Otomanopee One', sans-serif;
+    padding-bottom:4px;
+
+}
+
+.message-middle{
+    float:left;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid lack;
+    justify-content:space-between;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid rgb(80, 78, 78);
+    
+}
+
+ .chat-messages .message-middle .text{
+    text-align: center;
+    letter-spacing: 3px;
+    width: 100%;
+    color: rgb(61, 42, 42);
+    margin: 2px auto;
+
+}
+
+
+

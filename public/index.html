@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my chat app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>Chat App</h1>
+    <div class="form-container">
+        <marquee><strong>NOTE: </strong>Created code should be unique and should not contain any symbol,users with same room code will be on same chat room</marquee>
+        <form action="chat.html">
+            <input type="text" name="username" id="username" placeholder="Enter your username" required autocomplete="off">
+            <input type="text" name="room" id="room" placeholder="Enter room code" autocomplete="off">
+            <button type="submit" class="btn">Join Chat</button>
+        </form>
+    </div>
+
+    <!-- <div class="god">
+      <h2>Created By-Nikhil Bhatt</h2>
+    </div> -->
+
+
+    <script type="text/javascript">
+            TweenMax.from(".form-container form button", 2, {
+            delay:0.8,
+            y: -200,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom(".form-container form input", 2, {
+            delay: 0.4,
+            opacity: 0,
+            y: -200,
+            ease: Expo.easeInOut
+      }, 0.1);
+    </script>
+</body>
+</html>
